@@ -44,7 +44,7 @@ const Home: NextPage<Props> = ({ products }) => {
             </Grid>
             <Flex alignItems="center" justifyContent="center">
                 {Boolean(cart.length) && (
-                    <Link href={`https://wa.me/+5491126306505?text=${encodeURIComponent(text)}`}>
+                    <Link href={`https://wa.me/+5491126306506?text=${encodeURIComponent(text)}`}>
                         <a target="_blank">
                             <Button colorScheme="whatsapp">
                                 Checkout ({cart.length} {cart.length > 1 ? 'products' : 'product'})
