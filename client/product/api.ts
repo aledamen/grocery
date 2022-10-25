@@ -18,7 +18,7 @@ export default{
                     },
                     error: (error) => reject(error.message)
                 })
-            })
+            }) 
         })
     }
 }
