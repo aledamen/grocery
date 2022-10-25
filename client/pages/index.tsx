@@ -27,7 +27,6 @@ const Home: NextPage<Props> = ({ products }) => {
             .concat(`\n Total: ${parseCurrency(cart.reduce((total, product) => total + product.price, 0))}`)
     }, [cart])
 
-    console.log(products)
     return (
         <Stack>
             <Grid gap={4} templateColumns="repeat(3, 1fr)">
