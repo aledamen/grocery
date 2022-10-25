@@ -1,1 +1,3 @@
-# grocery
+# Grocery
+
+## Caracteristicas
