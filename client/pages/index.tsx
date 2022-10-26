@@ -29,7 +29,7 @@ const Home: NextPage<Props> = ({ products }) => {
 
     return (
         <Stack>
-            <Grid gap={4} templateColumns="repeat(3, 1fr)">
+            <Grid gap={4} templateColumns={{base:"repeat(2, 1fr)",md:"repeat(3, 1fr)"}}>
                 {products.map((product, i) => (
                     <Stack borderRadius='md' p={4} key={i} color='green.500' bg="gray.100" alignItems="center" textAlign="center" fontSize='sm' fontWeight='500'>
                         <Text>{product.title}</Text>
@@ -46,7 +46,7 @@ const Home: NextPage<Props> = ({ products }) => {
                 {Boolean(cart.length) && (
                     <Link href={`https://wa.me/+5491126306506?text=${encodeURIComponent(text)}`}>
                         <a target="_blank">
-                            <Button colorScheme="whatsapp">
+                            <Button colorScheme="whatsapp" w='300px'>
                                 Checkout ({cart.length} {cart.length > 1 ? 'products' : 'product'})
                             </Button>
                         </a>

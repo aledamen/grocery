@@ -10,5 +10,15 @@ export default extendTheme({
                 backgroundColor: 'primary.50'
             }
         }
-    }
+    },
+    breakpoints: {
+        sm: '320px',
+        m:'550px',
+        md: '768px',
+        lg: '990px',
+        xl: '1200px',
+        xml:'1350px',
+        xxl: '1536px',
+        xxxl: '1700px'
+    },
 })
